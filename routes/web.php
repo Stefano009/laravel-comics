@@ -18,5 +18,5 @@ Route::get('/', function () {
     $data = [
         'comics' => $dbComix
     ];
-    return view('index', $data);
-})->name('home');
+    return view('home', $data);
+});
