@@ -27,4 +27,33 @@ Route::get('/', function () {
         'footerList' => $footerList
     ];
     return view('home', $data);
-});
+})->name('index');
+
+Route::get('/comics', function (){
+    $socials = config('social');
+    $footer = config('footer');
+    $footerList = config('footer-list');
+    // dd($footerList);
+
+    $data = [
+
+        'socials' => $socials,
+        'socials_footer' => $footer,
+        'footerList' => $footerList
+    ];
+    return view('comics', $data);
+})->name('comix');
+
+Route::get('/TV', function (){
+    $socials = config('social');
+    $footer = config('footer');
+    $footerList = config('footer-list');
+    // dd($footerList);
+
+    $data = [
+        'socials' => $socials,
+        'socials_footer' => $footer,
+        'footerList' => $footerList
+    ];
+    return view('TV', $data);
+})->name('tv');

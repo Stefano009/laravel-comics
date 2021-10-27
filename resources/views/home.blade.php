@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('card')
     
     @foreach ($comics as $comic)
@@ -14,3 +13,6 @@
     @endforeach
     
 @endsection
+@include('partials.header')
+@include('partials.main')
+@include('partials.footer')

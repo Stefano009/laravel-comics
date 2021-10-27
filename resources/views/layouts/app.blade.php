@@ -8,8 +8,8 @@
     <title>my app</title>
 </head>
 <body>  
-    @include('partials.header')
+    {{-- @include('partials.header')
     @include('partials.main')
-    @include('partials.footer')
+    @include('partials.footer') --}}
 </body>
 </html>
