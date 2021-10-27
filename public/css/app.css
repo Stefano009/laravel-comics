@@ -5,7 +5,8 @@
 }
 
 body {
-  width: 100vw;
+  max-width: 100vw;
+  height: 200vh;
   font-family: sans-serif;
 }
 
@@ -14,20 +15,20 @@ nav .blue-row {
   background-color: #0282F9;
   display: flex;
   justify-content: flex-end;
-  padding: 2px 100px;
-  font-size: 0.4rem;
+  padding: 5px 100px;
+  font-size: 0.8rem;
   color: #ffffff;
 }
 nav .nav {
-  height: 50px;
+  height: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0 80px;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 nav .nav img {
-  height: 30px;
+  height: 60px;
 }
 nav .nav .pages {
   display: flex;
@@ -46,8 +47,8 @@ nav .nav .pages h4:hover {
   border-bottom: solid 1px blue;
 }
 nav .nav input {
-  height: 1rem;
-  font-size: 0.5rem;
+  height: 1.8rem;
+  font-size: 1rem;
   text-align: end;
 }
 
@@ -61,14 +62,14 @@ nav .nav input {
 
 main {
   width: 100%;
-  height: 600px;
-  padding: 30px;
+  height: 35%;
+  padding: 30px 0;
   background-color: #1C1C1C;
   position: relative;
 }
 main .container {
   width: 70%;
-  margin: 0 auto;
+  margin: 130px auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -77,7 +78,6 @@ main .container .absolute {
   position: absolute;
   color: white;
   background-color: #0282F9;
-  padding: 5px 10px;
 }
 main .container .top {
   top: 0;
@@ -85,12 +85,14 @@ main .container .top {
   transform: translateY(-50%);
   font-size: 1.2rem;
   font-weight: 900;
+  padding: 5px 10px;
 }
 main .container .bottom {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1rem;
+  font-size: 0.6rem;
+  padding: 10px 30px;
 }
 main .container .card {
   width: 16.6666666667%;
@@ -110,4 +112,22 @@ main .container .card p {
   color: white;
   text-transform: uppercase;
   font-size: 0.9rem;
+}
+main .container-main-section {
+  height: 20%;
+  width: 100%;
+  background-color: #0282F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container-main-section .merch {
+  padding: 0 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+main .container-main-section .merch img {
+  height: 80px;
+  padding: 10px;
 }

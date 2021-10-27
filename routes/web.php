@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $array_comics = config('comics');
+    $socials = config('social');
+    $footer = config('footer');
+
     $data = [
-        'comics' => $array_comics
+        'comics' => $array_comics,
+        'socials' => $socials,
+        'socials_footer' => $footer
     ];
     return view('home', $data);
 });
