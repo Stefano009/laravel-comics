@@ -1,10 +1,16 @@
 @extends('layouts.app')
 
 @section('card')
+    
     @foreach ($comics as $comic)
-    <img src="{{$comic['thumb']}}" alt="">
-    <p>
-        {{ $comic['series'] }}
-    </p>
+        <div class="card">
+            <div class="img">
+                <img src="{{$comic['thumb']}}" alt="">
+            </div>
+            <p>
+                {{ $comic['series'] }}
+            </p>
+        </div>
     @endforeach
+    
 @endsection

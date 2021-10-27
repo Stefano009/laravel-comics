@@ -52,9 +52,62 @@ nav .nav input {
 }
 
 .jumbo {
-  height: 200px;
+  height: 400px;
   overflow: hidden;
 }
 .jumbo img {
   width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+  background-color: #1C1C1C;
+  position: relative;
+}
+main .container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .container .absolute {
+  position: absolute;
+  color: white;
+  background-color: #0282F9;
+  padding: 5px 10px;
+}
+main .container .top {
+  top: 0;
+  left: 16.5%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+main .container .bottom {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+main .container .card {
+  width: 16.6666666667%;
+  padding: 0 10px;
+}
+main .container .card .img {
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+main .container .card .img img {
+  width: 100%;
+}
+main .container .card p {
+  padding-top: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
