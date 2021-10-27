@@ -1,0 +1,51 @@
+footer {
+    height: 450px;
+    background-image: url("../img/footer-bg.jpg");
+    overflow: hidden;
+    .float-left{
+        float: left;
+        width:50%;
+        height: 500px;
+        &:after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        ul {
+            padding:20px 0 0 30%;
+            height: 400px;
+            width:50%;
+            color: white;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            .list {
+                padding: 10px 0;
+                h3 {
+                    padding: 20px 0;
+                }
+                li {
+                    color: grey;
+                    padding: 2px 0;
+                    font-size: .9rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        p {
+            padding-left: 30%;
+            font-size: .8rem;
+            color: grey;
+            span {
+                color: #0282F9;
+                cursor: pointer;
+            }
+        }
+        img {
+            height: 110%;
+            object-position: 0px -50px;
+        }
+        
+    }
+}

@@ -17,11 +17,14 @@ Route::get('/', function () {
     $array_comics = config('comics');
     $socials = config('social');
     $footer = config('footer');
+    $footerList = config('footer-list');
+    // dd($footerList);
 
     $data = [
         'comics' => $array_comics,
         'socials' => $socials,
-        'socials_footer' => $footer
+        'socials_footer' => $footer,
+        'footerList' => $footerList
     ];
     return view('home', $data);
 });

@@ -62,17 +62,15 @@ nav .nav input {
 
 main {
   width: 100%;
-  height: 35%;
-  padding: 30px 0;
-  background-color: #1C1C1C;
   position: relative;
 }
 main .container {
-  width: 70%;
-  margin: 130px auto;
+  width: 100%;
+  padding: 50px 15% 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #1C1C1C;
 }
 main .container .absolute {
   position: absolute;
@@ -88,7 +86,7 @@ main .container .top {
   padding: 5px 10px;
 }
 main .container .bottom {
-  bottom: 20px;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.6rem;
@@ -114,7 +112,7 @@ main .container .card p {
   font-size: 0.9rem;
 }
 main .container-main-section {
-  height: 20%;
+  height: 120px;
   width: 100%;
   background-color: #0282F9;
   display: flex;
@@ -130,4 +128,56 @@ main .container-main-section .merch {
 main .container-main-section .merch img {
   height: 80px;
   padding: 10px;
+}
+
+footer {
+  height: 450px;
+  background-image: url("../img/footer-bg.jpg");
+  overflow: hidden;
+}
+footer .float-left {
+  float: left;
+  width: 50%;
+  height: 500px;
+}
+footer .float-left:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+footer .float-left ul {
+  padding: 20px 0 0 30%;
+  height: 400px;
+  width: 50%;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+footer .float-left ul .list {
+  padding: 10px 0;
+}
+footer .float-left ul .list h3 {
+  padding: 20px 0;
+}
+footer .float-left ul .list li {
+  color: grey;
+  padding: 2px 0;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+footer .float-left p {
+  padding-left: 30%;
+  font-size: 0.8rem;
+  color: grey;
+}
+footer .float-left p span {
+  color: #0282F9;
+  cursor: pointer;
+}
+footer .float-left img {
+  height: 110%;
+  -o-object-position: 0px -50px;
+     object-position: 0px -50px;
 }
