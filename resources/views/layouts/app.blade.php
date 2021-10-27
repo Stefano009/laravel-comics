@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/app.css">
     <title>my app</title>
 </head>
-<body>
+<body>  
     @include('partials.header')
+    @include('partials.main')
 </body>
 </html>
