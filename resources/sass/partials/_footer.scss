@@ -1,51 +1,89 @@
 footer {
     height: 450px;
     background-image: url("../img/footer-bg.jpg");
-    overflow: hidden;
-    .float-left{
-        float: left;
-        width:50%;
-        height: 500px;
-        &:after {
-            content: " ";
-            display: block;
-            clear: both;
-        }
-        ul {
-            padding:20px 0 0 30%;
-            height: 400px;
+    .footer-container{
+        height: 100%;
+        overflow: hidden;    
+        .float-left{
+            float: left;
             width:50%;
-            color: white;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            .list {
-                padding: 10px 0;
-                h3 {
-                    padding: 20px 0;
-                }
-                li {
-                    color: grey;
-                    padding: 2px 0;
-                    font-size: .9rem;
-                    text-transform: capitalize;
+            height: 500px;
+            &:after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+            ul {
+                padding:20px 0 0 30%;
+                height: 400px;
+                width:50%;
+                color: white;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                .list {
+                    padding: 10px 0;
+                    h3 {
+                        padding: 20px 0;
+                    }
+                    li {
+                        color: grey;
+                        padding: 2px 0;
+                        font-size: .9rem;
+                        text-transform: capitalize;
+                    }
                 }
             }
-        }
-        p {
-            padding-left: 30%;
-            font-size: .8rem;
-            color: grey;
-            span {
-                color: #0282F9;
-                cursor: pointer;
+            p {
+                padding-left: 30%;
+                font-size: .8rem;
+                color: grey;
+                span {
+                    color: #0282F9;
+                    cursor: pointer;
+                }
             }
+            img {
+                height: 110%;
+                object-position: 0px -50px;
+            }
+            
         }
-        img {
-            height: 110%;
-            object-position: 0px -50px;
-        }
-        
     }
+    .icons {
+        height:100px;
+        width: 100%;
+        background: #303030 !important;
+        
+        display: flex;
+        .left {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 50%;
+            color:white;
+            font-size: .8rem;
+            .btn {
+                padding: 10px;
+                border: solid 1.5px #0282F9;
+            }
+        }
+        .right {
+            width:50%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            div>h3 {
+                color: #0282F9;
+                font-size: 1rem;
+                padding-right: 20px;
+            }
+            .socials img {
+                padding: 0 5px;
+                height: 30px;
+            }
+        }
+    }
+    
 }

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'footer-facebook.png',
-    'footer-twitter.png',
-    'footer-youtube.png',
-    'footer-pinterest.png',
-    'footer-periscope.png',
+    '/img/footer-facebook.png',
+    '/img/footer-twitter.png',
+    '/img/footer-youtube.png',
+    '/img/footer-pinterest.png',
+    '/img/footer-periscope.png',
 ];
