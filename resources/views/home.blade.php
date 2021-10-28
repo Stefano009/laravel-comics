@@ -13,6 +13,9 @@
     @endforeach
     
 @endsection
+@section('title')
+    home
+@endsection
 @include('partials.header')
 @include('partials.main')
 @include('partials.footer')

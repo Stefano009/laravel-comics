@@ -5,6 +5,9 @@
         Sono una pagina istituzionale
     </h1>
 @endsection
+@section('title')
+    tv
+@endsection
 
 @include('partials.header')
 @include('partials.main-institutional')
